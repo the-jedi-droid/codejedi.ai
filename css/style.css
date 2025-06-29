@@ -1,0 +1,72 @@
+
+:root {
+    --background: #0A0A1A; /* Very dark blue/purple for space */
+    --text-color: #A0A0C0; /* Soft grey-blue for console text */
+    --prompt-color: #00FF00; /* Bright green for terminal prompt */
+    --link-color: #80FFFF; /* Cyan for links (subtle lightsaber/nebula) */
+    --font-family: 'Fira Code', monospace;
+    --border-color: #303040; /* Subtle border for console blocks */
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid var(--border-color); /* Subtle console border */
+    box-shadow: 0 0 15px rgba(128, 255, 255, 0.1); /* Subtle glow */
+    background-color: #050510; /* Slightly darker inner background */
+}
+
+.line {
+    display: flex;
+    white-space: pre-wrap;
+    margin-bottom: 5px;
+}
+
+.prompt {
+    color: var(--prompt-color);
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.command {
+    color: var(--text-color);
+}
+
+.output {
+    margin-left: 20px; /* Indent output */
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 2px solid var(--prompt-color); /* Jedi green line */
+    background-color: rgba(0, 0, 0, 0.2); /* Very subtle transparency */
+}
+
+.output ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.output ul li {
+    margin-bottom: 5px;
+}
+
+.output a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.output a:hover {
+    text-decoration: underline;
+}
